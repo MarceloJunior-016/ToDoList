@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-blue: #2d89be;
+    --color-blueDark: #2a6fb1;
+    --color-black: #535353;
+    --color-grey: #757575;
+    --color-red: #a33636;
+    --color-green: #2e972e;
+    --color-yellow: #c0ad44;
+}
+.Post{
+    max-width: 350px;
+    min-width: 150px;
+    height: 30rem;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-black);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 6px 6px 3px 3px rgba(36, 36, 36, 0.3);
+}
+
+.PostHeader{
+    background-color: var(--color-blue);
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 3px solid var(--color-blueDark);
+    height: 10%;
+    
+}
+.PostHeaderInput{
+    background-color: transparent;
+    padding: 6px 6px;
+    width: 330px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+}
+
+textarea{
+    resize: none;
+}
+.PostContent{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    padding:0.2rem;
+}
+.PostContent-input{
+    background-color: transparent;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;   
+    padding: 3px;
+}
+
+.PostFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-top: 1px solid var(--color-grey);
+    height: 3.5rem;
+    align-items: center;
+}
+.PostFooterSelect{
+    color: #fff ;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 6px;
+}
+option[value="Done"]{
+    background-color: transparent;
+    border: 1px solid var(--color-grey);
+    color: var(--color-green);
+}
+option[value="In progress"]{
+    background-color: transparent;
+    border: 1px solid var(--color-grey);
+    color: var(--color-yellow);
+}
+option[value="Not started"]{
+    background-color: transparent;
+    border: 1px solid var(--color-grey);
+    color: var(--color-red);
+}
+
+.ButtonCancel{
+    color: #fff ;
+    width: 3.5rem;
+    background-color: var(--color-red);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6px;
+    margin: 5px;
+}
+.ButtonDone{
+    color: #fff ;
+    width: 3.5rem;
+    background-color: var(--color-green);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6px;
+    margin:5px;
+}
